@@ -8,7 +8,7 @@ export default function Home() {
         <title>Homepage</title>
       </Head>
       <Layout>
-
+        
       </Layout>
 
     </div>

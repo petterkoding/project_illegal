@@ -2,10 +2,10 @@ import Link from "next/link"
 
 const Nav = () => {
   return (
-    <header className="bg-stone-200">
-        <div className="max-w-7xl mx-auto flex flex-row justify-between">
-            illegal burger
-            <nav>
+    <header className="bg-stone-200 h-[80px]">
+        <div className="h-full max-w-7xl mx-auto flex flex-row justify-between items-center">
+            <div className="flex-0 mr-20 bg-green-500">Illegal burger</div>
+            <nav className="bg-red-500 flex-1 flex flex-row justify-evenly">
                 <Link href="/menu">Menu</Link>
                 <Link href="/about">About</Link>
                 <Link href="/contact">Contact</Link>
