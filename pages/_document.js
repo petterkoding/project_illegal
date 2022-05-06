@@ -5,10 +5,10 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link
-          href="https://fonts.googleapis.com/css2?family=Koulen&display=optional"
-          rel="stylesheet"
-          />
+        <link 
+        href="https://fonts.googleapis.com/css2?family=Koulen&family=Noto+Sans:ital,wght@0,300;0,400;0,600;0,900;1,700&display=optional"
+        rel="stylesheet"
+        />
         </Head>
         <body>
           <Main />

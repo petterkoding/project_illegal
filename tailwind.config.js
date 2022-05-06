@@ -4,7 +4,12 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        Koulen: ["Koulen", "sans-serif"],
+        Noto: ["'Noto Sans'", "sans-serif"]
+      }
+    },
   },
   plugins: [],
 }
