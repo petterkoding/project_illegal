@@ -3,7 +3,8 @@ import HomeHero from '../components/homepage/HomeHero'
 import Layout from '../components/layout/Layout'
 import { getAllBurgers } from '../lib/api'
 
-export default function Home() {
+export default function Home(props) {
+  console.log(props)
   return (
     <div>
       <Head>
@@ -19,8 +20,9 @@ export default function Home() {
 
 export async function getStaticProps(){
   const allBurgers = await getAllBurgers()
+
   return{
     props: { allBurgers},
-    revalidate: 10
+    revalidate: 1
   }
 }
