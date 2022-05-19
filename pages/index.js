@@ -5,19 +5,19 @@ import Burgers from '../components/homepage/Burgers'
 import { getAllBurgers } from '../lib/api'
 
 export default function Home({allBurgers}) {
-  console.log(allBurgers)
+  // console.log(allBurgers)
   return (
     <div>
       <Head>
         <title>Homepage</title>
       </Head>
       <Layout>
-        {/* <HomeHero/> */}
+        <HomeHero/>
         
       
-        {/* {allBurgers.map((burgers) => (
-          <Burgers types={burgers}/>
-        ))} */}
+        {allBurgers.map((burgers, index) => (
+          <Burgers key={burgers._id} index={index} types={burgers}/>
+        ))}
       </Layout>
 
     </div>

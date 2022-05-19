@@ -8,6 +8,13 @@ module.exports = {
       fontFamily: {
         Koulen: ["Koulen", "sans-serif"],
         Noto: ["'Noto Sans'", "sans-serif"]
+      },
+      colors: {
+        illegalGreen: "#00AB4E",
+        illegalRed: "#EE3224",
+        illegalBlue: "#2E9BD2",
+        illegalBackground: "#FAF7EC",
+        illegalBlack: "#231F20"
       }
     },
   },
