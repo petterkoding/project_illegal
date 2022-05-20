@@ -8,7 +8,7 @@ import TopBanner from '../components/layout/TopBanner'
 export default function Home({allBurgers}) {
   // console.log(allBurgers)
   return (
-    <div>
+    <>
       <Head>
         <title>Illegal Burger | restaurant Oslo</title>
       </Head>
@@ -22,7 +22,7 @@ export default function Home({allBurgers}) {
         ))}
       </Layout>
 
-    </div>
+    </>
   )
 }
 
