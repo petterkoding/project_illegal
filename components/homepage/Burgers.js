@@ -1,12 +1,15 @@
-const Burgers = ({types, index}) => {
-    console.log(types)
+import Burger from "./Burger"
+
+const Burgers = ({menu}) => {
   return (
-    <div className="flex space-x-4">
-        <h3 className="text-black flex justify-center items-center"><span className="text-6xl font-Roboto">{index+1}</span>{types.name}</h3>
-        <h4>{types.price_single}</h4>
-        <h4>{types.double ? types.price_double : "" }</h4>
+    <div className="grid grid-cols-2 md:grid-cols-3 gap-y-10 gap-x-4 my-6">
+         {menu.map((burgers, index) => (
+          <Burger key={burgers._id} index={index} types={burgers}/>
+        ))}
     </div>
   )
 }
 
 export default Burgers
+
+

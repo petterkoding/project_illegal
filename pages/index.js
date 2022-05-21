@@ -6,7 +6,7 @@ import { getAllBurgers } from '../lib/api'
 import TopBanner from '../components/layout/TopBanner'
 
 export default function Home({allBurgers}) {
-  // console.log(allBurgers)
+  // console.log("alla sammen", allBurgers)
   return (
     <>
       <Head>
@@ -15,11 +15,10 @@ export default function Home({allBurgers}) {
       <Layout>
         <TopBanner>Bestill på Foodora/Wolt. Følg oss på facebook @illegaburger </TopBanner>
         <HomeHero/>
-        
-      
-        {allBurgers.map((burgers, index) => (
-          <Burgers key={burgers._id} index={index} types={burgers}/>
-        ))}
+
+        <h2 className=" mt-4 font-Noto text-2xl uppercase font-bold">Meny</h2>
+        <Burgers menu={allBurgers}/>
+
       </Layout>
 
     </>
