@@ -8,7 +8,7 @@ module.exports = {
       fontFamily: {
         Koulen: ["Koulen", "sans-serif"],
         Noto: ["'Noto Sans'", "sans-serif"],
-        Roboto: ['"Roboto Slab"', "serif"]
+        Roboto: ["'Roboto Slab'", "serif"]
       },
       colors: {
         illegalGreen: "#00AB4E",
