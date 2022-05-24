@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 const Burger = ({types, index}) => {
-    // console.log(types)
+    console.log("LOGTYPES", types)
 
     const [clicked, setClicked] = useState(false)
 
@@ -29,7 +29,7 @@ return (
 
                 
                 <div className="flex flex-row justify-between items-center">
-                    <h4 className="text-md font-Noto uppercase text-gray-700">{types.slogan}</h4>
+                    <h4 className="text-md font-Noto uppercase text-gray-700 mr-2">{types.slogan}</h4>
 
 
                     {/* allergens */}
@@ -52,12 +52,13 @@ return (
 
             
 
-            <div className="flex flex-row mt-4">
+            <div className="group flex flex-row mt-4">
                 {/* first row */}
-                <div className="flex flex-col px-2">
+                <div className="flex flex-col px-2 font-Noto">
+                    <span className="h-4 bg-illegalGreen"></span>
                 {types.patties.map((el, index) => (
                     <p key={index}>
-                        <span className="mr-1 md:mr-2 font-bold uppercase text-xs">{el.type}</span>
+                        <span className="mr-1 md:mr-2 uppercase font-Noto tracking-wider font-semibold text-xs">{el.type}</span>
                         <span className="text-sm">{el.grams}g</span>
                     </p>
                 ))}
@@ -65,9 +66,9 @@ return (
 
                 {/* second row */}
 
-                <div className="flex flex-col mx-1 md:mx-4 md:px-2 space-y-1 text-illegalBlack">
+                <div className="flex flex-col mx-1 md:mx-4 md:px-2 space-y-1 text-illegalBlack font-Roboto">
                     
-                    {/* <div className="text-illegalRed text-xs font-bold underline">enkel</div> */}
+                    <div className="text-illegalRed font-Roboto font-bold text-xs underline h-4 tracking-wider">enkel</div>
                     <span className="text-sm">{hasPrice(types?.price_single_beef)}</span>
                     <span className="text-sm">{hasPrice(types?.price_single_fish)}</span>
                     <span className="text-sm">{hasPrice(types?.price_single_vegetar)}</span>
@@ -75,9 +76,9 @@ return (
 
 
                 {/* third row */}
-                <div className="flex flex-col px-2 space-y-1 text-illegalBlack">
+                <div className="flex flex-col px-2 space-y-1 text-illegalBlack font-Roboto">
                     
-                    {/* <div className="text-illegalRed text-xs font-bold underline">dobbel</div> */}
+                    {types.double && <div className="text-illegalRed text-xs font-Roboto font-bold underline tracking-wider">dobbel</div>}
                     <span className="text-sm">{hasPrice(types?.price_double_beef)}</span>
                     <span className="text-sm">{hasPrice(types?.price_double_fish)}</span>
                     <span className="text-sm">{hasPrice(types?.price_double_vegetar)}</span>

@@ -1,11 +1,11 @@
-const ExtrasRow = ({extra, color}) => {
+const ExtrasRow = ({extra}) => {
 
     const {name, price, allergens} = extra
 
   return (
-    <div className="flex flex-row justify-between">
+    <div className="flex flex-row justify-between mt-2">
 
-        <h5 className="text-illegalGreen font-bold uppercase text-lg font-Noto">
+        <h5 className="text-illegalGreen font-bold uppercase text-sm md:text-lg font-Noto">
             {name}
 
 
