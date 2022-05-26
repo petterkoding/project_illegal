@@ -1,8 +1,5 @@
-import { useState } from "react"
 
 const Burger = ({types, index}) => {
-
-    const [clicked, setClicked] = useState(false)
 
     const hasPrice = (value) => {
         if(value < 1 || undefined || null){
@@ -15,8 +12,7 @@ const Burger = ({types, index}) => {
 
 return (
     <div
-        onClick={(e)=>setClicked(!clicked)}
-        className={`${clicked ? "border-illegalRed border-1 bg-transparent" : "border-1" } border flex flex-col h-auto px-2 py-6 gap-x-2 rounded-md bg-illegalBlue/10 hover:cursor-pointer`}>
+        className="bg-illegalBlue/10 flex flex-col h-auto px-2 py-6 gap-x-2 rounded-md">
 
         <div className="flex flex-row">
             <div className="text-7xl font-Roboto text-illegalBlack mr-2 font-bold">{index+1}</div>
@@ -51,19 +47,19 @@ return (
 
             
 
-            <div className="group flex flex-row mt-4">
+            <div className="flex flex-row mt-4 w-full">
               
-                <div className="flex flex-col px-2 font-Noto">
-                    <span className="h-4 bg-illegalGreen"></span>
+                <div className="flex flex-col px-2 font-Noto space-y-1 w-full">
+                    <span className="h-4 bg-illegalGreen"/>
                 {types.patties.map((el, index) => (
                     <p key={index}>
-                        <span className="mr-1 md:mr-2 uppercase font-Noto tracking-wider font-semibold text-xs">{el.type}</span>
+                        <span className="mr-1 md:mr-2 uppercase font-Noto font-semibold text-sm">{el.type}</span>
                         <span className="text-sm">{el.grams}g</span>
                     </p>
                 ))}
                 </div>
 
-                <div className="flex flex-col mx-1 md:mx-4 md:px-2 space-y-1 text-illegalBlack font-Roboto">
+                <div className="flex flex-col px-2 space-y-2 text-illegalBlack font-Roboto w-full">
                     
                     <div className="text-illegalRed font-Roboto font-bold text-xs underline h-4 tracking-wider">enkel</div>
                     <span className="text-sm font-bold">{hasPrice(types?.price_single_beef)}</span>
@@ -72,8 +68,7 @@ return (
                 </div>
 
 
-                {/* third row */}
-                <div className="flex flex-col px-2 space-y-1 text-illegalBlack font-Roboto">
+                <div className="flex flex-col px-2 space-y-2 text-illegalBlack font-Roboto w-full">
                     
                     {types.double && <div className="text-illegalRed text-xs font-Roboto font-bold underline tracking-wider">dobbel</div>}
                     <span className="text-sm font-bold">{hasPrice(types?.price_double_beef)}</span>
