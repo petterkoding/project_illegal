@@ -16,7 +16,7 @@ const Extras = ({menu}) => {
             <div className="flex items-center w-full">
 
                 <div className="h-[140px] w-[4px] bg-illegalBlack rounded-lg lg:mx6 hidden lg:block"/>
-                <span className="text-3xl uppercase font-Noto font-bold rotate-[-90deg] inline-block text-illegalRed">extras</span>
+                <span className="text-3xl uppercase font-Oswald font-bold rotate-[-90deg] inline-block text-illegalRed">extras</span>
 
                 <div className="w-full flex flex-col lg:flex-row justify-between lg:space-x-6 mr-10 lg:mr-0">
 

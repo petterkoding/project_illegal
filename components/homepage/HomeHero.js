@@ -1,5 +1,3 @@
-
-
 const HomeHero = () => {
   return (
     <div className="bg-[url('/img/banner.jpg')] bg-center bg-cover h-96 flex items-center justify-center px-6">

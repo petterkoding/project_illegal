@@ -24,10 +24,9 @@ return (
 
                 
                 <div className="flex flex-row justify-between items-center">
-                    <h4 className="text-md font-Noto uppercase text-gray-700 mr-2">{types.slogan}</h4>
+                    <h4 className="text-md font-Oswald font-normal uppercase text-gray-700 mr-2">{types.slogan}</h4>
 
 
-                    {/* allergens */}
                     <div className="text-xs text-gray-600">
                         {types?.allergens.map((type, index) => 
                         <span key={index} className="mr-1">{types.allergens.length === index + 1 ? type.shortened : type.shortened.concat(",")}</span>
@@ -49,11 +48,11 @@ return (
 
             <div className="flex flex-row mt-4 w-full">
               
-                <div className="flex flex-col px-2 font-Noto space-y-1 w-full">
+                <div className="flex flex-col px-2 font-Oswald space-y-1 w-full">
                     <span className="h-4 bg-illegalGreen"/>
                 {types.patties.map((el, index) => (
                     <p key={index}>
-                        <span className="mr-1 md:mr-2 uppercase font-Noto font-semibold text-sm">{el.type}</span>
+                        <span className="mr-1 md:mr-2 uppercase font-Oswald font-semibold text-sm">{el.type}</span>
                         <span className="text-sm">{el.grams}g</span>
                     </p>
                 ))}
@@ -62,18 +61,18 @@ return (
                 <div className="flex flex-col px-2 space-y-2 text-illegalBlack font-Roboto w-full">
                     
                     <div className="text-illegalRed font-Roboto font-bold text-xs underline h-4 tracking-wider">enkel</div>
-                    <span className="text-sm font-bold">{hasPrice(types?.price_single_beef)}</span>
-                    <span className="text-sm font-bold">{hasPrice(types?.price_single_fish)}</span>
-                    <span className="text-sm font-bold">{hasPrice(types?.price_single_vegetar)}</span>
+                    {types.price_single_beef && <span className="text-sm font-bold">{hasPrice(types?.price_single_beef)}</span>}
+                    {types.price_single_fish && <span className="text-sm font-bold">{hasPrice(types?.price_single_fish)}</span>}
+                    {types.price_single_vegetar && <span className="text-sm font-bold">{hasPrice(types?.price_single_vegetar)}</span>}
                 </div>
 
 
                 <div className="flex flex-col px-2 space-y-2 text-illegalBlack font-Roboto w-full">
                     
                     {types.double && <div className="text-illegalRed text-xs font-Roboto font-bold underline tracking-wider">dobbel</div>}
-                    <span className="text-sm font-bold">{hasPrice(types?.price_double_beef)}</span>
-                    <span className="text-sm font-bold">{hasPrice(types?.price_double_fish)}</span>
-                    <span className="text-sm font-bold">{hasPrice(types?.price_double_vegetar)}</span>
+                    {types.price_double_beef && <span className="text-sm font-bold">{hasPrice(types?.price_double_beef)}</span>}
+                    {types.price_double_fish && <span className="text-sm font-bold">{hasPrice(types?.price_double_fish)}</span>}
+                    {types.price_double_vegetar && <span className="text-sm font-bold">{hasPrice(types?.price_double_vegetar)}</span>}
 
                 </div>
 

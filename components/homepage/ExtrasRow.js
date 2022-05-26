@@ -5,7 +5,7 @@ const ExtrasRow = ({extra}) => {
   return (
     <div className="flex flex-row justify-between mt-2">
 
-        <h5 className="text-illegalGreen font-bold uppercase text-sm md:text-lg font-Noto">
+        <h5 className="text-illegalGreen font-bold uppercase text-sm md:text-lg font-Oswald">
             {name}
 
 
