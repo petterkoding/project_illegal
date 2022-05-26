@@ -3,11 +3,11 @@ import {ExternalLinkIcon, CodeIcon} from "@heroicons/react/outline"
 
 const Footer = () => {
   return (
-    <footer className="h-auto py-8 bg-illegalGreen text-white relative">
+    <footer className="h-auto py-12 bg-illegalGreen text-white relative">
 
       <span className="absolute bottom-5 right-5 flex items-center text-xs mr-1">
         <CodeIcon className="w-5 h-5 inline mr-1"/>
-          and design by
+          av
           
         <a
           className="ml-1 font-Roboto underline hover:text-illegalBlack"
@@ -37,7 +37,7 @@ const Footer = () => {
 
         <div className="font-bold text-white font-Oswald uppercase tracking-wide">Restauranter</div>
 
-        <div className="flex justify-around w-full mt-4">
+        <div className="flex justify-around w-full mt-4 mb-8">
           <div className="text-md text-white">
             <address>
               <div className="font-Oswald">Olaf Ryes plass 4</div>

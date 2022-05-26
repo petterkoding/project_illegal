@@ -13,7 +13,7 @@ const Beverages = ({menu}) => {
             </div>
 
             )}
-            <div className="text-illegalRed uppercase font-Oswald w-full font-bold">div øl på flaske, spør servitør</div>
+            <div className="text-illegalRed uppercase font-Oswald w-full font-bold mt-3">div øl på flaske, spør servitør</div>
         </div>
     </div>
   )
