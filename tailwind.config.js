@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         Koulen: ["Koulen", "sans-serif"],
-        Noto: ["'Noto Sans'", "sans-serif"],
+        Oswald: ["Oswald", "sans-serif"],
         Roboto: ["'Roboto Slab'", "serif"]
       },
       colors: {
