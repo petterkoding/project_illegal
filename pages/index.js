@@ -6,7 +6,7 @@ import Extras from '../components/homepage/Extras'
 import { getAllBurgers, getBeverages, getExtras } from '../lib/api'
 import TopBanner from '../components/layout/TopBanner'
 import Beverages from '../components/homepage/Beverages'
-import { textAnimate } from '../lib/Animations'
+import { textSlideUp } from '../lib/Animations'
 
 import { motion } from 'framer-motion'
 
@@ -18,20 +18,30 @@ export default function Home({allBurgers, extras, beverages}) {
         <title>Illegal Burger | restaurant Oslo</title>
       </Head>
       <Layout>
-        <TopBanner>Bestill på Foodora. Følg oss på facebook @illegaburger </TopBanner>
+        <TopBanner>Bestill på Foodora. Følg oss på
+          <a
+            className="ml-1 uppercase underline"
+            href="https://www.facebook.com/illegaburger"
+            target="_blank"
+            rel="noopener noreferrer">
+            facebook
+
+          </a>
+          
+        </TopBanner>
         <HeroBanner/>
 
         <div className="px-2 mt-10">
           <motion.h2
             initial="hidden"
             animate="show"
-            variants={textAnimate}
+            variants={textSlideUp}
             className=" mt-4 font-Oswald text-4xl uppercase font-bold text-illegalRed">Burgere</motion.h2>
 
           <motion.div
             initial="hidden"
             animate="show"
-            variants={textAnimate}
+            variants={textSlideUp}
             className="mt-4 text-illegalBlack font-Oswald">
             <p className="text-illegalRed text-md font-bold uppercase">glutenfritt brød er 10,- ekstra</p>
             <h4 className="uppercase text-sm font-bold mt-4">allergener</h4>
