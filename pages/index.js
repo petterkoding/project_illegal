@@ -6,25 +6,11 @@ import Extras from '../components/homepage/Extras'
 import { getAllBurgers, getBeverages, getExtras } from '../lib/api'
 import TopBanner from '../components/layout/TopBanner'
 import Beverages from '../components/homepage/Beverages'
+import { textAnimate } from '../lib/Animations'
 
 import { motion } from 'framer-motion'
 
 export default function Home({allBurgers, extras, beverages}) {
-
-  const textAnimate = {
-    hidden: {
-      opacity: 0,
-      y: 5
-    },
-    show: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.8,
-        delay: 0.3
-      }
-    },
-  }
 
   return (
     <>
@@ -36,7 +22,6 @@ export default function Home({allBurgers, extras, beverages}) {
         <HeroBanner/>
 
         <div className="px-2 mt-10">
-
           <motion.h2
             initial="hidden"
             animate="show"
