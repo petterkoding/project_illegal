@@ -1,5 +1,5 @@
 import Head from "next/head"
-import HomeHero from "../../components/homepage/HomeHero"
+import HeroBanner from "../../components/layout/HeroBanner"
 import Layout from "../../components/layout/Layout"
 import TopBanner from "../../components/layout/TopBanner"
 
@@ -11,7 +11,7 @@ const index = () => {
       </Head>
       <Layout>
         <TopBanner>Bestill på Foodora. Følg oss på facebook @illegaburger </TopBanner>
-        <HomeHero/>
+        <HeroBanner/>
 
         <div className="px-2 mt-10">
 
