@@ -21,7 +21,7 @@ export default function Home({allBurgers, extras, beverages}) {
       y: 0,
       transition: {
         duration: 0.8,
-        delay: 1
+        delay: 0.3
       }
     },
   }
@@ -43,13 +43,17 @@ export default function Home({allBurgers, extras, beverages}) {
             variants={textAnimate}
             className=" mt-4 font-Oswald text-4xl uppercase font-bold text-illegalRed">Burgere</motion.h2>
 
-          <div className="mt-4 text-illegalBlack font-Oswald">
+          <motion.div
+            initial="hidden"
+            animate="show"
+            variants={textAnimate}
+            className="mt-4 text-illegalBlack font-Oswald">
             <p className="text-illegalRed text-md font-bold uppercase">glutenfritt brød er 10,- ekstra</p>
             <h4 className="uppercase text-sm font-bold mt-4">allergener</h4>
             <p className="text-xs uppercase">
               e = egg, g = hvetegluten, f = fisk, se = sesam, m = melk, so = soya, s = sennep, sel = selleri
             </p>
-          </div>
+          </motion.div>
 
           <Burgers menu={allBurgers}/>
 

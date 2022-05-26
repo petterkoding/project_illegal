@@ -1,7 +1,8 @@
 const MainExtra = ({item}) => {
 
   return (
-    <div className="my-10 max-w-[300px] mb-24 md: lg:mb-0">
+    <div
+      className="my-10 max-w-[300px] mb-24 md: lg:mb-0">
         <h5 className="text-7xl uppercase text-illegalRed font-Oswald font-bold w-4/5">{item.name}</h5>
         <span className="text-lg font-Oswald text-illegalBlack uppercase mr-4 font-bold">{item.info}</span>
         {item.allergens.map((type, index) => 

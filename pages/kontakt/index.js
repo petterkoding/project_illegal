@@ -31,7 +31,7 @@ const index = () => {
           </div>
 
           <h2 className="font-Oswald uppercase text-2xl text-illegalBlack font-bold mt-6 mb-1">Veldig sulten?</h2>
-          <h3 className="font-Oswald uppercase text-xl text-illegalBlack font-bold mb-4">Bestill levering eller henting hos foodora</h3>
+          <h3 className="font-Oswald uppercase text-lg text-illegalBlack font-bold mb-4">Bestill levering eller henting hos foodora</h3>
           <a
               className="px-6 py-2 bg-pink-600 inline-block text-2xl uppercase font-Oswald text-white rounded-xl mt-4"
               href="https://www.foodora.no/restaurant/n2xs/illegal-burger-ryes-plass?fbclid=IwAR0yYzxNcQfexGCCzh3kPJvr5W5iinwGqcJ3_P2eDRwh32dTWfTAsON-UFE"
