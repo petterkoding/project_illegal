@@ -7,7 +7,7 @@ const NavLink = ({href, as}) => {
 
   return(
     <Link href={href}>
-        <a className={`${href === asPath ? "bg-illegalBlue" : "bg-illegalBlack"} uppercase font-bold text-sm px-6 py-2 text-white rounded-md transition duration-200 ease-in-out`}>
+        <a className={`${href === asPath ? "bg-illegalBlue" : "bg-illegalBlack"} uppercase font-bold text-sm px-6 py-2 text-white rounded-md transition duration-200 ease-in-out hover:bg-illegalBlue hover:drop-shadow-lg`}>
           {as}
         </a>
     </Link>

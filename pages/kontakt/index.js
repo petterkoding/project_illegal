@@ -13,20 +13,34 @@ const index = () => {
       
      
       <Layout>
-        <TopBanner>Bestill på Foodora/Wolt. Følg oss på facebook @illegaburger </TopBanner>
-        <div className="my-4">
-        <address>
-          <div>Olaf Ryes plass 4</div>
-          <div>21 90 19 19</div>
-        </address>
-      </div>
+        <TopBanner>Bestill på Foodora. Følg oss på facebook @illegaburger </TopBanner>
 
-      <div className="my-4">
-        <address>
-          <div>Møllergata 23</div>
-          <div>22 20 33 02</div>
-        </address>
-      </div>
+        <div className="px-2 mt-10">
+
+          <h1 className="font-Noto uppercase text-4xl text-illegalRed font-bold">Kontakt oss</h1>
+          <div className="my-4">
+            <address>
+              <div className="font-Noto text-md text-illegalBlack">Olaf Ryes plass 4</div>
+              <div className="font-Roboto text-md text-illegalBlack tracking-wider">21 90 19 19</div>
+            </address>
+          </div>
+
+          <div className="my-4">
+            <address>
+              <div className="font-Noto text-md text-illegalBlack">Møllergata 23</div>
+              <div className="font-Roboto text-md text-illegalBlack tracking-wider">22 20 33 02</div>
+            </address>
+          </div>
+
+          <h2 className="font-Noto uppercase text-2xl text-illegalBlack font-bold mt-10">Veldig sulten?</h2>
+          <a
+              className="px-6 py-2 bg-illegalBlue inline-block text-2xl uppercase font-Noto text-white"
+              href="https://www.foodora.no/restaurant/n2xs/illegal-burger-ryes-plass?fbclid=IwAR0yYzxNcQfexGCCzh3kPJvr5W5iinwGqcJ3_P2eDRwh32dTWfTAsON-UFE"
+              target="_blank"
+              rel="noopener noreferrer">
+              bestill her
+          </a>
+        </div>
       </Layout>
 
     </>

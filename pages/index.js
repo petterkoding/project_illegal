@@ -20,15 +20,6 @@ export default function Home({allBurgers, extras, beverages}) {
 
         <div className="px-2 mt-10">
 
-          
-          {/* <a
-            className="px-6 py-2 bg-illegalBlue inline-block text-2xl uppercase font-Roboto text-white"
-            href="https://www.foodora.no/restaurant/n2xs/illegal-burger-ryes-plass?fbclid=IwAR0yYzxNcQfexGCCzh3kPJvr5W5iinwGqcJ3_P2eDRwh32dTWfTAsON-UFE"
-            target="_blank"
-            rel="noopener noreferrer">
-            bestill nå
-          </a> */}
-
           <h2 className=" mt-4 font-Noto text-4xl uppercase font-bold text-illegalRed">Burgere</h2>
           <div className="mt-4 text-illegalBlack">
             <p className="text-illegalRed text-md font-bold uppercase font-Noto">glutenfritt brød er 10,- ekstra</p>
