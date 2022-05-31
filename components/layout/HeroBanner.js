@@ -13,7 +13,7 @@ const HeroBanner = () => {
 
         </motion.h1>
 
-        <span className="absolute bottom-[-22px] right-0 text-xs text-gray-500 font-Oswald">Burger Totem by
+        <span className="absolute bottom-[-22px] right-3 text-xs text-gray-500 font-Oswald">Burger Totem by
           <a
             className="ml-1 underline uppercase"
             href="https://www.uglylogo.no/"

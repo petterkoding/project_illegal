@@ -8,7 +8,7 @@ const Contact = () => {
         initial="hidden"
         animate="show"
         variants={textSlideUp}
-        className="px-2 mt-10 mb-32">        
+        className="px-2 mt-10 mb-32 h-[80vh]">        
 
         <h1 className="font-Oswald uppercase text-4xl text-illegalRed font-bold mb-8">Våre avdelinger</h1>
 

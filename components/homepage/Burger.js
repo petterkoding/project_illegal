@@ -11,8 +11,7 @@ const Burger = ({types, index}) => {
     }
 
 return (
-    <div className="flex flex-col md:flex-row h-full px-2 py-6 gap-x-2 rounded-md max-w-[860px]">
-
+    <div className="bg-illegalBlue/10 flex flex-col md:flex-row h-full px-2 py-6 gap-x-2 rounded-md max-w-[860px]">
 
         <div className="flex flex-row md:mr-22 md:w-1/2">
             <div className="text-8xl md:text-9xl font-Roboto text-illegalBlack mr-2 font-bold">{index+1}</div>
