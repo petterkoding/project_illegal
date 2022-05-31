@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="h-auto py-12 bg-illegalGreen text-white relative">
       
       <span className="absolute bottom-10 right-5 flex items-center text-xs mr-1">
-        Designet av
+        Original meny designet av
         <a
           className="ml-1 font-Roboto underline hover:text-illegalBlack"
           href="https://www.metricdesign.no/"
