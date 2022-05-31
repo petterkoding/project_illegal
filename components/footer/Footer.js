@@ -1,13 +1,24 @@
-import {ExternalLinkIcon, CodeIcon} from "@heroicons/react/outline"
+import {ExternalLinkIcon} from "@heroicons/react/outline"
 
 
 const Footer = () => {
   return (
     <footer className="h-auto py-12 bg-illegalGreen text-white relative">
+      
+      <span className="absolute bottom-10 right-5 flex items-center text-xs mr-1">
+        Designet av
+        <a
+          className="ml-1 font-Roboto underline hover:text-illegalBlack"
+          href="https://www.metricdesign.no/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Metric
+        </a>
+      </span>
 
       <span className="absolute bottom-5 right-5 flex items-center text-xs mr-1">
-        <CodeIcon className="w-5 h-5 inline mr-1"/>
-          av
+        Kodet av
           
         <a
           className="ml-1 font-Roboto underline hover:text-illegalBlack"
@@ -15,7 +26,8 @@ const Footer = () => {
           rel="noopener noreferrer"
           target="_blank"
         >
-          Petter Iversen</a>
+          Petter Iversen
+        </a>
       </span>
 
 

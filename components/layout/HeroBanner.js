@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 
 const HeroBanner = () => {
   return (
-    <div className="bg-[url('/img/banner.jpg')] bg-center bg-cover h-96 flex items-center justify-center px-6">
+    <div className="bg-[url('/img/banner.jpg')] bg-center bg-cover h-96 flex items-center justify-center px-6 relative">
         <motion.h1
           initial={{y: 10, opacity: 0}}
           animate={{y: 0, opacity: 1}}
@@ -12,6 +12,17 @@ const HeroBanner = () => {
           Hjemmelagd kullstekte gourmet burgere
 
         </motion.h1>
+
+        <span className="absolute bottom-[-22px] right-0 text-xs text-gray-500 font-Oswald">Burger Totem by
+          <a
+            className="ml-1 underline uppercase"
+            href="https://www.uglylogo.no/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            uglylogo
+          </a>
+        </span>
     </div>
   )
 }
