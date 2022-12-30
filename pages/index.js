@@ -1,10 +1,8 @@
 import Head from 'next/head'
-import HeroBanner from '../components/layout/HeroBanner'
 import Layout from '../components/layout/Layout'
 import Burgers from '../components/homepage/Burgers'
 import Extras from '../components/homepage/Extras'
 import { getAllBurgers, getBeverages, getExtras } from '../lib/api'
-import TopBanner from '../components/layout/TopBanner'
 import Beverages from '../components/homepage/Beverages'
 import { textSlideUp } from '../lib/Animations'
 
@@ -18,20 +16,8 @@ export default function Home({allBurgers, extras, beverages}) {
         <title>Illegal Burger | restaurant Oslo</title>
       </Head>
       <Layout>
-        <TopBanner>Bestill på Foodora. Følg oss på
-          <a
-            className="ml-1 uppercase underline"
-            href="https://www.facebook.com/illegaburger"
-            target="_blank"
-            rel="noopener noreferrer">
-            facebook
 
-          </a>
-          
-        </TopBanner>
-        <HeroBanner/>
-
-        <div className="px-2 mt-10">
+        <div className="px-2 pt-10">
           <motion.h2
             initial="hidden"
             animate="show"

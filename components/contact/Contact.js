@@ -4,15 +4,17 @@ import OpeningHours from "./OpeningHours"
 
 const Contact = () => {
     return (
-    <motion.div
-        initial="hidden"
-        animate="show"
-        variants={textSlideUp}
-        className="px-2 mt-10 mb-32 h-[80vh]">        
+
+        <div className="px-2 pt-10 mb-32">
+        <motion.div
+            initial="hidden"
+            animate="show"
+            variants={textSlideUp}
+            className="px-2 mt-10 h-auto">        
 
         <h1 className="font-Oswald uppercase text-4xl text-illegalRed font-bold mb-8">Våre avdelinger</h1>
 
-        <div className="md:flex md:space-x-32 h-[20vh]">
+        <div className="md:flex md:space-x-32">
             <div className="mt-2 mb-10">
                 <address>
                     <div className="font-Oswald text-3xl font-bold uppercase text-illegalBlack">Olaf Ryes plass 4</div>
@@ -50,7 +52,8 @@ const Contact = () => {
             </div>
         </div>
 
-    </motion.div>
+        </motion.div>
+    </div>
   )
 }
 

@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 
 const HeroBanner = () => {
   return (
-    <div className="bg-[url('/img/banner.jpg')] bg-center bg-cover h-96 flex items-center justify-center px-6 relative">
+    <div className="bg-[url('/img/banner.jpg')] bg-center bg-cover h-96 flex items-center justify-center px-6 relative select-none">
         <motion.h1
           initial={{y: 10, opacity: 0}}
           animate={{y: 0, opacity: 1}}
